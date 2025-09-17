@@ -37,8 +37,27 @@ const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
 const [firstIng, secondIng] = pizzaToppings;
 
-console.log("First ingredient:", firstIng);
-console.log("Second ingredient:", secondIng);
+// console.log("First ingredient:", firstIng);
+// console.log("Second ingredient:", secondIng);
 
 
+// ! Exercise 3: Destructuring objects
+// a. Given the provided `car` object, use destructuring to create two
+//    variables: `make` and `model` that will hold the respective values.
+//
+// b. Console log the `make` and `model` variables.
+//
+// Starting code (don't modify this):
+
+const car = {
+   make: 'Audi',
+   model: 'Q5',
+ };
+ 
+ // Your code here:
+ 
+ const { make, model } = car;
+
+ console.log("Make:", make);
+ console.log("Model:", model);
 
