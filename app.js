@@ -123,4 +123,27 @@ const userProfile = {
    [propertyName]: "user123",
 };
 
-console.log(userProfile);
+// console.log(userProfile);
+
+//  Exercise: 7: Import and Export
+// see importingFile.js and exportingFile.js 
+
+// Exercise 8: Default Params
+// a. Create a function with two parameters, `noun` and `adjective`.
+// 
+// b. Give `noun` a default value of "cat" and `adjective` a default value of 
+//    "orange".
+//
+// c. The function should log a sentence 'The cat is orange.' by default, but 
+//    should substitute the appropriate parameters when it is supplied with 
+//    arguments.
+//
+// Your code here:
+
+function describeNoun(noun = "cat", adjective = "orange") {
+   noun = "building";
+   console.log(`The ${noun} is ${adjective}.`);
+}
+
+describeNoun();
+
