@@ -18,4 +18,27 @@ const numsDoubled = nums.map((num) => {
    return num * 2;
 });
 
-console.log(numsDoubled);
+// console.log(numsDoubled);
+
+
+// Exercise 2: Array destructuring
+// a. Given the provided `pizzaToppings` array, use destructuring to extract 
+//    the first and second values and place them into variables. Name the 
+//    variable that corresponds to the first value `firstIngredient`. Name the 
+//    variable that corresponds to the second value `secondIngredient`.
+//
+// b. Console log the `firstIngredient` and `secondIngredient` variables.
+//
+// Starting code (don't modify this):
+
+const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
+
+// Your code here:
+
+const [firstIng, secondIng] = pizzaToppings;
+
+console.log("First ingredient:", firstIng);
+console.log("Second ingredient:", secondIng);
+
+
+
