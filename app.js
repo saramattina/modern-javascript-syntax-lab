@@ -18,7 +18,7 @@ const numsDoubled = nums.map((num) => {
    return num * 2;
 });
 
-// console.log(numsDoubled);
+console.log(numsDoubled);
 
 
 // Exercise 2: Array destructuring
@@ -37,8 +37,8 @@ const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
 const [firstIng, secondIng] = pizzaToppings;
 
-// console.log("First ingredient:", firstIng);
-// console.log("Second ingredient:", secondIng);
+console.log("First ingredient:", firstIng);
+console.log("Second ingredient:", secondIng);
 
 
 // ! Exercise 3: Destructuring objects
@@ -58,8 +58,8 @@ const car = {
  
  const { make, model } = car;
 
-//  console.log("Make:", make);
-//  console.log("Model:", model);
+ console.log("Make:", make);
+ console.log("Model:", model);
 
 
 // Exercise 4: Applying the spread operator on arrays
@@ -75,7 +75,7 @@ const morePizzaToppings = ['Cheese', 'Sauce'];
 // Your code here:
 
 const uncontroversialPizzaToppings = [...morePizzaToppings];
-// console.log(uncontroversialPizzaToppings);
+console.log(uncontroversialPizzaToppings);
 
 
 // Exercise 5: Applying the spread operator on objects
@@ -100,8 +100,8 @@ const anotherCar = {
  myCar.make = "Ford";
  myCar.model = "Mustang";
 
-//  console.log("Another car:", anotherCar);
-//  console.log("My car:", myCar);
+ console.log("Another car:", anotherCar);
+ console.log("My car:", myCar);
 
 
 // Exercise 6: Dynamic keys in objects
@@ -123,7 +123,7 @@ const userProfile = {
    [propertyName]: "user123",
 };
 
-// console.log(userProfile);
+console.log(userProfile);
 
 //  Exercise: 7: Import and Export
 // see importingFile.js and exportingFile.js 
@@ -145,7 +145,7 @@ function describeNoun(noun = "cat", adjective = "orange") {
    console.log(`The ${noun} is ${adjective}.`);
 }
 
-// describeNoun();
+describeNoun();
 
 // Exercise 9: Ternary Operator
 // a. Convert the following `if...else` statement into a ternary:
@@ -162,7 +162,7 @@ const pizza = 'tasty';
 
 // Your code here:
 
-// pizza === "tasty" ? console.log("yum") : console.log("yuck");
+pizza === "tasty" ? console.log("yum") : console.log("yuck");
 
 
 // Exercise 10: Boolean gates
@@ -208,3 +208,18 @@ const savedUserTheme = "dark"; // Change to 'dark', etc., or leave it `null`.
 
 const theme = savedUserTheme || 'light';
 console.log("Theme: ", theme);
+
+
+// Exercise 11:
+// a. Use optional chaining in a console.log so that a console log of
+//    `adventurer.cat.age` returns `undefined` instead of an error.
+//
+// Starting code (don't modify this):
+
+const adventurer = {
+   name: 'Alice',
+ };
+ 
+ // Your code here:
+ console.log(adventurer.cat?.name);
+ 
