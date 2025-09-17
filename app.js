@@ -75,6 +75,30 @@ const morePizzaToppings = ['Cheese', 'Sauce'];
 // Your code here:
 
 const uncontroversialPizzaToppings = [...morePizzaToppings];
-console.log(uncontroversialPizzaToppings);
+// console.log(uncontroversialPizzaToppings);
 
 
+// Exercise 5: Applying the spread operator on objects
+// a. Duplicate the provided `anotherCar` object and spread its values into a 
+//    new variable named `myCar`.
+//
+// b. Change the `make` and `model` properties of the `myCar` object to new 
+//    values.
+//
+// c. Console log both objects and observe the results.
+//
+// Starting code (don't modify this):
+
+const anotherCar = {
+   make: 'Toyota',
+   model: 'RAV4',
+ };
+ 
+ // Your code here:
+ 
+ const myCar = { ...anotherCar };
+ myCar.make = "Ford";
+ myCar.model = "Mustang";
+
+ console.log("Another car:", anotherCar);
+ console.log("My car:", myCar);
