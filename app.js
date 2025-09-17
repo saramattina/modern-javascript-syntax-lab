@@ -58,6 +58,23 @@ const car = {
  
  const { make, model } = car;
 
- console.log("Make:", make);
- console.log("Model:", model);
+//  console.log("Make:", make);
+//  console.log("Model:", model);
+
+
+// Exercise 4: Applying the spread operator on arrays
+// a. Duplicate the provided `morePizzaToppings` array using the spread 
+//    operator and assign it to a variable named `uncontroversialPizzaToppings`.
+// 
+// b. Console log the `uncontroversialPizzaToppings` variable.
+//
+// Starting code (don't modify this):
+
+const morePizzaToppings = ['Cheese', 'Sauce'];
+
+// Your code here:
+
+const uncontroversialPizzaToppings = [...morePizzaToppings];
+console.log(uncontroversialPizzaToppings);
+
 
